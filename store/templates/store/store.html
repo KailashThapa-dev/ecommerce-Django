@@ -1,1 +1,11 @@
-<h3>Store</h3>
+<!-- loading the static files into the template  and link the dynamic path -->
+{%extends 'store/main.html' %}
+
+{%load static %}
+    
+{% block content %}
+<h1>Store</h1>
+
+<!-- <img src="{% static 'images/cart.png' %}"> -->
+{%endblock %}
+
