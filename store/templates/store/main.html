@@ -1,20 +1,35 @@
-<!DOCTYPE html>
 {% load static %}
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Ecommerce</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, minimum-scale=1.0" />
 
-        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-    </head>
-    <body>
-        <h3>Nav placeholder</h3>
-        <hr>
-        <br>
-        {% block content %}
-        <h1>Welcome to our Ecommerce Store</h1>
-        {% endblock %}
+<head>
+    <title>Ecommerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+  
+</head>
 
-        
-    </body>
+<body>
+    <header>
+        <div class="navbar-container">
+            <h2 class="logo">Ecom</h2>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="{% url 'store' %}">Store</a></li>
+                    <li><a href="{% url 'cart' %}">Cart</a></li>
+                    <li><a href="{% url 'checkout' %}">Checkout</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="login-button">Login</button>
+                <img class="cart-icon" src="{% static 'images/cart.png' %}" alt="Cart">
+            </div>
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+</body>
+
 </html>
