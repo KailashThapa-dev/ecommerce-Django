@@ -5,6 +5,39 @@
     
 {% block content %}
 <h1>Store</h1>
+<div class="product-container">
+    <div class="product-card">
+        <img src="{% static 'images/placeholder.png' %}" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>Price: <strong>Rs100</strong></p>
+        <hr>
+        <div class="product-card-buttons">              
+            <button>Add to Cart</button>
+            <button>View Details</button>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'images/placeholder.png' %}" alt="Product 1">
+       <strong><h3>Product 1</h3></strong>
+        <p>Price: <strong>Rs100</strong></p>
+        <hr>
+        <div class="product-card-buttons">              
+            <button>Add to Cart</button>
+            <button>View Details</button>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'images/placeholder.png' %}" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>Price: <strong>Rs100</strong></p> 
+        <hr>
+        <div class="product-card-buttons">              
+            <button>Add to Cart</button>
+            <button>View Details</button>
+        </div>
+    </div>
+    
+</div>
 
 
 {%endblock %}

@@ -17,14 +17,16 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="{% url 'store' %}">Store</a></li>
-                    <li><a href="{% url 'cart' %}">Cart</a></li>
                     <li><a href="{% url 'checkout' %}">Checkout</a></li>
                 </ul>
             </nav>
             <div class="nav-actions">
                 <button class="login-button">Login</button>
-                <img class="cart-icon" src="{% static 'images/cart.png' %}" alt="Cart">
+                <a href="{% url 'cart' %}">
+                    <img class="cart-icon" src="{% static 'images/cart.png' %}" alt="Cart">
+                </a>
             </div>
+            <p class="cart-count"">0</p>
         </div>
     </header>
 
